@@ -2,6 +2,10 @@ a:hover{
     background-color: none !important;
 }
 
+i{
+    cursor: pointer;
+}
+
 .nav-mobile a, .location a, .account a{
     text-decoration: none;
     color: black;
