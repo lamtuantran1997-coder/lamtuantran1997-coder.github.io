@@ -1,0 +1,167 @@
+
+.nav-mobile a, .location a, .account a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-mobile a:hover, .location a:hover, .account a:hover{
+    background-color: transparent !important;
+    text-decoration: underline;
+}
+
+.nav-mobile i:hover, .location i:hover, .account i:hover{
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128,0.8);
+}
+
+.slide-show{
+    width: 80%;
+    height: 30%;
+}
+
+.carousel button{
+    color: black !important;
+    width: 5%;
+    height: 10%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    border-radius: 50%;
+    width: 40%;
+    height: 150%;
+}
+
+
+.hero div{
+    top: 80%;
+    left: 27%;
+
+}
+
+.hero div a{
+    border: none;
+    width: 50%;
+}
+
+.hero div a:hover{
+    background-color: black;
+    color: white;
+}
+
+.carousel-indicators{
+    top: 105%;
+}
+
+button.slide-show-2{
+    top:40%;
+}
+
+
+
+button.slide-show-2 .carousel-control-prev-icon, button.slide-show-2 .carousel-control-next-icon{
+    width: 50%;
+    height: 100%;
+}
+
+main h2{
+    margin-top: 5rem;
+}
+
+
+
+main select{
+    outline: none;
+    margin-bottom: 0.7rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0.5rem;
+}
+
+main .plan{
+    background-color: #F3D5DD;
+}
+
+.plan h2{
+  padding-top: 4rem ;
+}
+
+.new-look{
+    background-color: #F5D4DF;
+}
+
+.new-look h2{
+    padding-top: 2rem;
+}
+.new-look > a{
+    border: 1px solid black;
+}
+
+.new-look a:hover{
+    background-color: black;
+    color: white;
+}
+
+.love{
+    background-color: #FEE37F;
+}
+
+.love h2{
+    padding-top: 3rem;
+}
+
+.love a{
+    border: 1px solid black;
+    width: 15%;
+    margin: 0 1rem;
+}
+
+.love a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.index{
+    background-color: #ece8e8;
+}
+
+.index p{
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.index p:hover{
+    text-decoration: underline;
+}
+
+.index i{
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+
+.term{
+    background-color: #d1cdcd;
+}
+
+.country{
+    height: 1.5rem;
+    justify-content: center;
+}
+
+.term img{
+    max-width: 3%;
+    margin: 0 0.5rem;
+}
+
+.rights{
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    opacity: 0.5;
+}
+
+.copyright{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: -0.5rem;
+}
+

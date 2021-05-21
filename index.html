@@ -1,0 +1,699 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Web</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css-index/devices.css">
+    <link rel="stylesheet" href="css-index/override-bs.css">
+    <link rel="stylesheet" href="css-index/index-header.css">
+    <script src="https://kit.fontawesome.com/9bd06d4268.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).unbind();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="location col-3 d-sm-flex d-none">
+                    <a href="#" class="m-auto fs-4"><i class="fas fa-map-marker-alt p-1"></i><span class="ms-3">Find a
+                            store</span></a>
+                </div>
+                <div class=" col col-sm-6 text-center py-3">
+                    <a href="index.html"><img src="img/web-logo.png" alt="web-logo" class="img-fluid"></a>
+                </div>
+                <div class="account col-3 d-sm-flex d-none">
+                    <a href="#" class="m-auto fs-4"><i class="far fa-user p-1"></i><span class="ms-3">Account</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-sm-0 m-sm-0 row">
+                <div class="d-flex d-sm-none ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-nav">
+                        <span class="navbar-toggler-icon text-light"></span>
+                    </button>
+                    <div class="nav-mobile align-self-center flex-fill d-flex justify-content-between
+                mx-5 ">
+                        <a href="#"><i class="fas fa-search fs-3 text-light"></i></a>
+                        <a href="#"><i class="fas fa-map-marker-alt fs-3 text-light"></i></a>
+                        <a href="#"><i class="far fa-heart fs-3 text-light"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart fs-3 text-light"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="collapse navbar-collapse row text-white" id="collapse-nav">
+                    <ul class="navbar-nav col-sm-8  col-12 ps-lg-4">
+                        <li class="nav-item dropdown ms-3"><a href="#" class="nav-link p-2 p-sm-3 " id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Womens</a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-start py-sm-0 my-sm-0 ps-sm-5"
+                                aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">Clothing</a></li>
+                                <li><a href="#" class="dropdown-item">Shoes & Boots</a></li>
+                                <li><a href="#" class="dropdown-item">Accessories & Bags</a></li>
+                                <li><a href="#" class="dropdown-item">Curves & Plus Size</a></li>
+                                <li><a href="#" class="dropdown-item">Maternity</a></li>
+                                <li><a href="#" class="dropdown-item">Petite</a></li>
+                                <li><a href="#" class="dropdown-item">Tall</a></li>
+                                <li><a href="#" class="dropdown-item">Brands</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ms-3"><a href="#" class="nav-link p-2 p-sm-3" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Mens</a>
+                            <ul class="dropdown-menu dropdown-menu-dark py-sm-0 my-sm-0 ps-sm-5"
+                                aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">Clothing</a></li>
+                                <li><a href="#" class="dropdown-item">Brands</a></li>
+                                <li><a href="#" class="dropdown-item">Basics-From &#163;5.99 </a></li>
+                                <li><a href="#" class="dropdown-item">Shoes & Boots</a></li>
+                                <li><a href="#" class="dropdown-item">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ms-3"><a href="#" class="nav-link p-2 p-sm-3" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Girls</a>
+                            <ul class="dropdown-menu dropdown-menu-dark py-sm-0 my-sm-0 ps-sm-5"
+                                aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">Clothing</a></li>
+                                <li><a href="#" class="dropdown-item">Shoes</a></li>
+                                <li><a href="#" class="dropdown-item">Accessories </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ms-3"><a href="#" class="nav-link p-2 p-sm-3" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Boys</a>
+                            <ul class="dropdown-menu dropdown-menu-dark py-sm-0 my-sm-0 ps-sm-5"
+                                aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">Clothing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ms-3"><a href="#" class="nav-link p-2 p-sm-3" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Gifts</a>
+                            <ul class="dropdown-menu dropdown-menu-dark py-sm-0 my-sm-0 ps-sm-5"
+                                aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">Gifting</a></li>
+                                <li><a href="#" class="dropdown-item">Homeware</a></li>
+                                <li><a href="#" class="dropdown-item">Beauty</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ms-3"><a href="#" class="nav-link p-2 p-sm-3" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
+                            <ul class="dropdown-menu dropdown-menu-dark py-sm-0 my-sm-0 ps-sm-5"
+                                aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">Women</a></li>
+                                <li><a href="#" class="dropdown-item">Men</a></li>
+                                <li><a href="#" class="dropdown-item">Girls</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ms-3"><a href="#" class="nav-link p-2 p-sm-3" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Inspiration</a>
+                            <ul class="dropdown-menu dropdown-menu-dark py-sm-0 my-sm-0 ps-sm-5"
+                                aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">Women</a></li>
+                                <li><a href="#" class="dropdown-item">Men</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-sm-flex m-auto col-sm-3   d-none">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <div class="col-sm-1 d-sm-flex d-none">
+                        <i class="far fa-heart text-light fs-3 me-3 "></i>
+                        <i class="fas fa-shopping-cart text-light fs-3"></i>
+                    </div>
+                    <div class="account d-flex d-sm-none">
+                        <a href="#" class="m-auto fs-5 text-light"><i class="far fa-user p-1 text-light"></i><span
+                                class="ms-3">Account</span></a>
+                    </div>
+                </div>
+
+
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row bg-light text-center">
+                <div class="col d-flex flex-column border-end my-2">
+                    <div class="m-auto">
+                        <p class="my-0 py-0">FREE CLICKS & COLLECT AVAILABLE</p>
+                        <p class="fw-lighter my-0 py-0">ON ORDER OVER &#163;19.19 </p>
+                    </div>
+
+                </div>
+                <div class="col d-flex flex-column">
+                    <div class="m-auto p-2">
+                        <p class="my-0 py-0">NEW STYLES HAVE LANDED</p>
+                        <p class="fw-lighter my-0 py-0">GET READY TO SHOP</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="breadcrumb" class="ms-3  my-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Women Homepage</li>
+            </ol>
+        </nav>
+
+        <p class="text-center text-primary fw-bold fs-4 mt-4">Everything in one place</p>
+
+
+        <div id="carouselExampleControls" class="carousel slide mt-4 d-flex" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slide-show d-flex mx-auto text-center text-primary fw-bolder fs-6">
+                        <div class="d-flex flex-column mx-sm-3 ">
+                            <img src="img/slide-show/sl-1.jpg" class="mw-100" alt="...">
+                            <p>Sandals</p>
+                        </div>
+                        <div class="d-flex flex-column  mx-sm-3 ">
+                            <img src="img/slide-show/sl-2.jpg" class="mw-100" alt="...">
+                            <p>Shackets</p>
+                        </div>
+                        <div class="d-flex flex-column mx-sm-3 ">
+                            <img src="img/slide-show/sl-3.jpg" class="mw-100" alt="...">
+                            <p>Mini skirts</p>
+                        </div>
+                        <div class="d-flex flex-column mx-sm-3 ">
+                            <img src="img/slide-show/sl-4.jpg" class=" mw-100" alt="...">
+                            <p>Workwear</p>
+                        </div>
+                        <div class="d-flex flex-column  mx-sm-3 ">
+                            <img src="img/slide-show/sl-5.jpg" class="mw-100" alt="...">
+                            <p>Sunglasses</p>
+                        </div>
+                        <div class="d-flex flex-column mx-sm-3 ">
+                            <img src="img/slide-show/sl-6.jpg" class="mw-100" alt="...">
+                            <p>Lingerie</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="carousel-item ">
+                    <div class="slide-show d-flex mx-auto text-center text-primary  fw-bolder fs-6">
+                        <div class="d-flex flex-column mx-sm-3 ">
+                            <img src="img/slide-show/sl-7.jpg" class="mw-100" alt="...">
+                            <p>Sandals</p>
+                        </div>
+                        <div class="d-flex flex-column  mx-sm-3">
+                            <img src="img/slide-show/sl-8.jpg" class="mw-100" alt="...">
+                            <p>Shackets</p>
+                        </div>
+                        <div class="d-flex flex-column mx-sm-3  ">
+                            <img src="img/slide-show/sl-9.jpg" class="mw-100" alt="...">
+                            <p>Mini skirts</p>
+                        </div>
+                        <div class="d-flex flex-column mx-sm-3 ">
+                            <img src="img/slide-show/sl-10.jpg" class=" mw-100" alt="...">
+                            <p>Workwear</p>
+                        </div>
+                        <div class="d-flex flex-column  mx-sm-3 ">
+                            <img src="img/slide-show/sl-11.jpg" class="mw-100" alt="...">
+                            <p>Sunglasses</p>
+                        </div>
+                        <div class="d-flex flex-column mx-sm-3 ">
+                            <img src="img/slide-show/sl-12.jpg" class="mw-100" alt="...">
+                            <p>Lingerie</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev m-auto ms-5 d-sm-block d-none" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark " aria-hidden="true"></span>
+                <span class="visually-hidden ">Previous</span>
+            </button>
+            <button class="carousel-control-next m-auto me-5 d-sm-block d-none" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="hero container-fluid position-relative d-sm-block d-none mt-3">
+
+            <img src="img/hero/hero.jpg" class="mw-100 " alt="">
+            <div class="position-absolute text-dark w-50 d-flex">
+                <a href="#" class="btn btn-light p-2 mx-2">SHOP SUMMER</a>
+                <a href="#" class="btn btn-light p-2 mx-2">SHOP DRESSES</a>
+            </div>
+        </div>
+
+        <div class="hero container-fluid position-relative d-block d-sm-none mt-3">
+            <div class="row">
+                <img src="img/hero/hero-2.jpg" class="col-12" alt="">
+            </div>
+            <div class="position-absolute text-dark w-50 d-flex">
+                <a href="#" class="btn btn-light p-2 mx-2">SHOP SUMMER</a>
+                <a href="#" class="btn btn-light p-2 mx-2">SHOP DRESSES</a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <p class="m-5 h2">New season calling....</p>
+        <div id="carouselExampleIndicators" class="carousel slide position-relative mx-sm-4" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex  m-auto">
+                        <div class="slide-hover d-flex flex-column mx-sm-3">
+                            <img src="img/slide-show-2/sl-1.jpg" class="mw-100" alt="">
+                            <p class="h-50">Black Ditsy Floral Wide Leg Crop Trousers</p>
+                            <p class="fw-bolder">&#163;23.99</p>
+
+                            <select class=" fw-bolder">
+                                <option>Choose option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                        <div class=" slide-hover d-flex flex-column mx-sm-3">
+                            <img src="img/slide-show-2/sl-2.jpg" class="mw-100" alt="">
+                            <p class="h-50">Blue Gingham Tiered Midi Dress</p>
+                            <p class="fw-bolder">&#163;23.99</p>
+
+
+                            <select class=" fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                        <div class=" slide-hover d-flex flex-column mx-sm-3">
+                            <img src="img/slide-show-2/sl-3.jpg" class="mw-100" alt="">
+                            <p class="h-50">Blue Floral V Neck Open Back Mini Dress</p>
+                            <p class="fw-bolder">&#163;15.99</p>
+
+
+                            <select class=" fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                        <div class=" slide-hover d-flex flex-column mx-sm-3">
+                            <img src="img/slide-show-2/sl-4.jpg" class="mw-100" alt="">
+                            <p class="h-50">Black Floral Button Sundress</p>
+                            <p class="fw-bolder">&#163;21.99</p>
+
+
+                            <select class=" fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                        <div class=" slide-hover d-flex flex-column mx-sm-3">
+                            <img src="img/slide-show-2/sl-5.jpg" class="mw-100" alt="">
+                            <p class="h-50">Black Floral Tiered Mini Skirt</p>
+                            <p class="fw-bolder">&#163;29.99</p>
+
+                            <select class="  fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                        <div class=" slide-hover d-flex flex-column mx-sm-3">
+                            <img src="img/slide-show-2/sl-6.jpg" class="mw-100" alt="">
+                            <p class="h-50">Pink Floral Tiered Mini Skirt</p>
+                            <p class="fw-bolder">&#163;13.99</p>
+
+                            <select class=" fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex m-auto">
+                        <div class=" slide-hover d-flex flex-column mx-sm-3 ">
+                            <img src="img/slide-show-2/sl-7.jpg" class="mw-100" alt="">
+                            <p class="h-50">Pink Ditsy Floral Crinkle Ruched Sundress</p>
+                            <p class="fw-bolder">&#163;28.99</p>
+
+                            <select class=" fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                        <div class=" slide-hover d-flex flex-column mx-sm-3 ">
+                            <img src="img/slide-show-2/sl-8.jpg" class="mw-100" alt="">
+                            <p class="h-50">Brown Floral Leaf V Neck Open Back Mini Dress</p>
+                            <p class="fw-bolder">&#163;33.99</p>
+
+                            <select class=" fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                        <div class=" slide-hover d-flex flex-column mx-sm-3 ">
+                            <img src="img/slide-show-2/sl-9.jpg" class="mw-100" alt="">
+                            <p class="h-50">Pink Floral V Frill Mini Dress</p>
+                            <p class="fw-bolder">&#163;16.99</p>
+
+                            <select class=" fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                        <div class=" slide-hover d-flex flex-column mx-sm-3">
+                            <img src="img/slide-show-2/sl-10.jpg" class="mw-100" alt="">
+                            <p class="h-50">Pink Floral Button Puff Sleeve Dress</p>
+                            <p class="fw-bolder">&#163;24.99</p>
+
+                            <select class=" fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                        <div class=" slide-hover d-flex flex-column mx-sm-3">
+                            <img src="img/slide-show-2/sl-11.jpg" class="mw-100" alt="">
+                            <p class="h-50">Rust Geometric Shirred Waist Ruffle</p>
+                            <p class="fw-bolder">&#163;23.99</p>
+
+
+                            <select class=" fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                        <div class=" slide-hover d-flex flex-column mx-sm-3">
+                            <img src="img/slide-show-2/sl-12.jpg" class="mw-100" alt="">
+                            <p class="h-50">Red Frill Strappy Tiered Max Dress</p>
+                            <p class="fw-bolder">&#163;15.99</p>
+
+                            <select class=" fw-bolder">
+                                <option>Choose option <i class="fas fa-chevron-down"></i></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <a href="#" class="btn btn-primary">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slide-show-2 carousel-control-prev position-absolute d-sm-block d-none" type="button"
+                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="slide-show-2 carousel-control-next position-absolute  d-sm-block d-none" type="button"
+                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators position-absolute">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="bg-dark active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-dark"
+                    aria-label="Slide 2"></button>
+            </div>
+        </div>
+
+        <h2 class="text-primary text-center">Your lockdown-lifting looks need…</h1>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-sm col-12 text-center fs-5">
+                        <img src="img/lockdown/img-1.jpg" class="mw-100" alt="">
+                        <p>Expect frills, florals & more
+                            from £6.99</p>
+                        <a href="#" class="btn btn-primary p-3 w-50">SHOP TOPS</a>
+                    </div>
+                    <div class="col-sm col-12 text-center fs-5">
+                        <img src="img/lockdown/img-2.jpg" class="mw-100" alt="">
+                        <p>Feel-good styles
+                            from £17.99</p>
+                        <a href="#" class="btn btn-primary  p-3 w-50">SHOP DENIM</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="plan container-fluid">
+                <h2 class="text-center text-primary fw-bolder">For all your plans…</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm col-12 text-center  my-5">
+                            <img src="img/plan/img-1.jpg" class="mw-100" alt="">
+                            <p class="fs-4 text-primary mt-3 fw-bold mb-0">Statement skirts
+                                from £17.99</p>
+                            <a href="#" class="">Shop Skirts</a>
+                        </div>
+                        <div class="col-sm col-12 text-center my-5">
+                            <img src="img/plan/img-2.jpg" class="mw-100" alt="">
+                            <p class="fs-4 text-primary mt-3 fw-bold mb-0">Hello again, sandals
+                                from £9.99</p>
+                            <a href="#" class="">Shop Sandals</a>
+                        </div>
+                        <div class="col-sm col-12 text-center my-5">
+                            <img src="img/plan/img-3.jpg" class="mw-100" alt="">
+                            <p class="fs-4 text-primary mt-3 fw-bold mb-0">Best dressed
+                                from £9.99</p>
+                            <a href="#" class="">Shop Occasionwear</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 class="text-center text-primary fw-bold">Fashion for every body</h2>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-sm col-12 text-center">
+                        <img src="img/fashion/img-1.jpg" class="mw-100" alt="">
+                        <p class="fs-5 fw-bold text-primary mt-2">CURVES</p>
+                    </div>
+                    <div class="col-sm col-12 text-center">
+                        <img src="img/fashion/img-2.jpg" class="mw-100" alt="">
+                        <p class="fs-5 fw-bold text-primary mt-2">PETITE</p>
+                    </div>
+                    <div class="col-sm col-12 text-center">
+                        <img src="img/fashion/img-3.jpg" class="mw-100" alt="">
+                        <p class="fs-5 fw-bold text-primary mt-2">TALL</p>
+                    </div>
+                    <div class="col-sm col-12 text-center">
+                        <img src="img/fashion/img-4.jpg" class="mw-100" alt="">
+                        <p class="fs-5 fw-bold text-primary mt-2">MATERNITY</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-look container-fluid text-center">
+                <h2 class="text-center text-primary fw-bold">New Look Daily
+                </h2>
+                <p class="text-center text-primary mt-3">Style tips, fashion inspiration, celebrity looks and everything we’re loving right now
+                </p>
+                <a href="#" class="w-25 btn btn-light">GET INSPIRED</a>
+                <div class="container">
+                    <div class="row  py-5">
+                        <div class="col-sm  text-center">
+                            <img src="img/newlook/img-1.jpg"  class="mw-100" alt="">
+                            <p class="text-primary">New Arrivals</p>
+                            <p class="fw-bold text-primary">12 Nice Tops Your Jeans Will Love</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        <div class="col-sm text-center">
+                            <img src="img/newlook/img-2.jpg"  class="mw-100" alt="">
+                            <p  class="text-primary">New Arrivals</p>
+                            <p class="fw-bold text-primary">14 New Neutrals You'll Love Wearing on Sunny Days</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        <div class="col-sm text-center">
+                            <img src="img/newlook/img-3.jpg" class="mw-100"  alt="">
+                            <p class="text-primary">Who's Wearing What</p>
+                            <p class="fw-bold text-primary">12 Iconic Mini Skirt Looks to Inspire Your Style</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        <div class="col-sm text-center">
+                            <img src="img/newlook/img-4.jpg"  class="mw-100" alt="">
+                            <p class="text-primary">Fashion & Style</p>
+                            <p class="fw-bold text-primary">How to Style a Midi Dress</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="love container-fluid text-center ">
+                <h2 class="text-primary fw-bold">Something they'll love
+                </h2>
+                <p class="text-primary">
+                    We've got fashion for everybody, and every plan
+                </p>
+                <div class="pb-5 ">
+                    <a href="#" class="btn btn-light ">SHOP MEN</a>
+                    <a href="#" class="btn btn-light ">SHOP GIRLS</a>
+                    <a href="#" class="btn btn-light ">SHOP BOYS</a>
+                </div>
+            </div> 
+            
+            <div class="newsletter container-fluid text-center d-sm-block d-none">
+                <h2 class="text-dark fw-light">Sign up to our newsletter</h2>
+                <p class="text-dark">Sign up to our e-mails to be the first to hear about the latest trends, new arrivals and exclusive offers.
+                    <br>You can unsubscribe at any time.</p>
+                    <div class=" d-flex justify-content-center pb-5">
+                        <input type="email"  placeholder="Email address" class="me-2">
+                        <a href="#" class="btn btn-dark fs-5 ">Sign me up</a>
+                      </div>
+            </div>
+            <div class="newsletter container-fluid d-sm-none d-block">
+                <h2 class="text-dark fw-light">Sign up to our newsletter</h2>
+                <p class="text-dark">Sign up to our e-mails to be the first to hear about the latest trends, new arrivals and exclusive offers.
+                    <br>You can unsubscribe at any time.</p>
+                    <div class=" d-flex flex-column pb-5">
+                        <input type="email"  placeholder="Email address" class="p-2">
+                        <a href="#" class="btn btn-dark fs-5 mt-2 ">Sign me up</a>
+                      </div>
+            </div>
+    </main>
+    <footer>
+        <div class="index container-fluid p-5">
+            <div class="d-flex justify-content-around" >
+                <div>
+                    <p class="fw-bold mb-4">Help</p>
+                    <p>Help Centre Home</p>
+                    <p>Covid-19 Update</p>
+                    <p>Security</p>
+                    <p>Privacy</p>
+                    <p>Cookies</p>
+                    <p>Accessibility</p>
+                    <p>Terms & Conditions</p>
+                    <p>Size Guide</p>
+                    <p>Site Map</p>
+                </div>
+                <div>
+                    <p class="fw-bold mb-4">Delivery & Returns</p>
+                    <p>Delivery & Collection Options</p>
+                    <p>How to Return</p>
+                    <p>Return Policy</p>
+                    <p>Refunds</p>
+                    <p>Delivery FAQs</p>
+                    <p>Collection FAQs</p>
+                    <p>Track Your Order</p>
+
+                </div>
+              
+                <div>
+                    <p class="fw-bold mb-4">Payment & Discounts</p>
+                    <p>Clothing Card</p>
+                    <p>Klarna</p>
+                    <p>Gift Cards</p>
+                    <p>Student Discount</p>
+                    <p>Black Friday</p>
+                    <p>Promotions & Discounts</p>
+                </div>
+                <div>
+                    <p class="fw-bold mb-4">Company Information</p>
+                    <p>Store Locator</p>
+                    <p>About FQET'S CLOTHING</p>
+                    <p>Careers</p>
+                    <p>Our Charity Foundation</p>
+                    <p>Modern Slavery Statement</p>
+                    <p>Clothing Kind</p>
+                    <p>Hospice UK</p>
+
+                </div>
+                <div>
+                    <h2>Be Social</h2>
+                    <p>Join the Conversation
+                    </p>
+                    <div>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="term container-fluid text-center p-3">
+            <div class="d-flex country mb-3"><img src="img/pay/unitedkingdom.png" class="me-2"alt=""><p>United Kingdom - £ - English</p></div> 
+            <div>
+                <img src="img/pay/american-express.png" alt="">
+                <img src="img/pay/visa.jpg" alt="">
+                <img src="img/pay/mastercard.png" alt="">
+                <img src="img/pay/paypal.webp" alt="">
+                <img src="img/pay/klarna.svg" alt="">
+            </div>
+            <p class="rights">The celebrities named or featured on NewLook.com have not endorsed, recommended or approved the items offered on site unless they are promoting their own brand.
+            </p>
+            <p class="copyright">&copy;2021 FQET'S CLOTHING Retailers Limited | Term & Conditions | Privacy | Security | Cookies</p>
+        </div>
+    </footer>
+</body>
+
+</html>
