@@ -17,11 +17,7 @@
     <script src="js/bootstrap.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(document).unbind();
-        });
-    </script>
+    
 </head>
 
 <body>
@@ -43,18 +39,20 @@
 
         <div class="container-fluid">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-sm-0 m-sm-0 row">
-                <div class="d-flex d-sm-none ">
+                <div class="d-flex d-sm-none position-relative">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse-nav">
                         <span class="navbar-toggler-icon text-light"></span>
                     </button>
                     <div class="nav-mobile align-self-center flex-fill d-flex justify-content-between
                 mx-5 ">
-                        <a href="#"><i class="fas fa-search fs-3 text-light"></i></a>
+                        <a href="#"><i class="fas fa-search search-mobile fs-3 text-light"></i></a>
                         <a href="#"><i class="fas fa-map-marker-alt fs-3 text-light"></i></a>
                         <a href="#"><i class="far fa-heart fs-3 text-light"></i></a>
                         <a href="#"><i class="fas fa-shopping-cart fs-3 text-light"></i></a>
                     </div>
+                    <input type="search" placeholder="Search...."
+                        class="input-mobile  d-none position-absolute w-100 top-100 start-0 h-100">
                 </div>
 
 
@@ -324,8 +322,6 @@
                 </div>
             </div>
         </div>
-
-
 
 
         <div class="hero container-fluid position-relative d-sm-block d-none mt-3">
@@ -991,8 +987,6 @@
         </div>
 
 
-
-
         <div class="container-fluid d-flex justify-content-start d-sm-none">
             <h2 class="">Be Social</h2>
             <div class="align-self-center ms-4 fs-4">
@@ -1089,14 +1083,6 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
         <div class="term container-fluid text-center p-3">
             <div class="d-flex country mb-3"><img src="img/pay/unitedkingdom.png" class="me-2" alt="">
                 <p>United Kingdom - £ - English</p>
@@ -1115,16 +1101,25 @@
                 Cookies</p>
         </div>
 
-
-
-
-
-
-
-
-
-
     </footer>
+    <script>
+        $(document).ready(function () {
+            $(document).unbind();
+        });
+        const input_mobile = document.querySelector(".input-mobile");
+        const search_mobile = document.querySelector(".search-mobile");
+
+        search_mobile.addEventListener("click",function(){
+            if(input_mobile.classList.contains("d-none")){
+                input_mobile.classList.remove("d-none");
+                input_mobile.classList.add("d-block");
+            }else{
+                input_mobile.classList.remove("d-block");
+                input_mobile.classList.add("d-none");
+            }
+        });
+
+    </script>
 </body>
 
 </html>
